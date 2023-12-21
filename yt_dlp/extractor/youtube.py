@@ -6948,6 +6948,21 @@ class YoutubeSearchIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor):
     }]
 
 
+class SubtitledLongYoutubeSearchIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor):
+    IE_DESC = 'YouTube search custom'
+    IE_NAME = 'youtube:searchcclong'
+    _SEARCH_KEY = 'ytsearchcclong'
+    _SEARCH_PARAMS = 'CAASBhABGAIoAQ=='  # Videos, with subtitles and > 20 mins
+    _TESTS = [{
+        'url': 'ytsearch5:youtube-dl test video',
+        'playlist_count': 5,
+        'info_dict': {
+            'id': 'youtube-dl test video',
+            'title': 'youtube-dl test video',
+        }
+    }]
+
+
 class YoutubeSearchDateIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor):
     IE_NAME = YoutubeSearchIE.IE_NAME + ':date'
     _SEARCH_KEY = 'ytsearchdate'
