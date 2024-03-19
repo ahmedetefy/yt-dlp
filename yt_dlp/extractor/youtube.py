@@ -6937,6 +6937,12 @@ class YoutubeSearchIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor):
     IE_DESC = 'YouTube search'
     IE_NAME = 'youtube:search'
     _SEARCH_KEY = 'ytsearch'
+
+
+class SubtitledYoutubeSearchIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor):
+    IE_DESC = 'YouTube search cc'
+    IE_NAME = 'youtube:searchcc'
+    _SEARCH_KEY = 'ytsearchcc'
     _SEARCH_PARAMS = 'EgQQASgB'  # Videos only
     _TESTS = [{
         'url': 'ytsearch5:youtube-dl test video',
