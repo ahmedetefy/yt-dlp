@@ -12,6 +12,7 @@ from .youtube import (  # Youtube is moved to the top to improve performance
     YoutubeRecommendedIE,
     YoutubeSearchDateIE,
     YoutubeSearchIE,
+    SubtitledYoutubeSearchIE,
     SubtitledLongYoutubeSearchIE,
     YoutubeSearchURLIE,
     YoutubeMusicSearchURLIE,

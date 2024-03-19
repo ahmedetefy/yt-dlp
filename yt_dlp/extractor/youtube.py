@@ -6945,7 +6945,7 @@ class SubtitledYoutubeSearchIE(YoutubeTabBaseInfoExtractor, SearchInfoExtractor)
     _SEARCH_KEY = 'ytsearchcc'
     _SEARCH_PARAMS = 'EgQQASgB'  # Videos only
     _TESTS = [{
-        'url': 'ytsearch5:youtube-dl test video',
+        'url': 'ytsearchcc5:youtube-dl test video',
         'playlist_count': 5,
         'info_dict': {
             'id': 'youtube-dl test video',
